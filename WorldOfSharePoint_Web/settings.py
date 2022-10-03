@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'HomePage.apps.HomepageConfig',
     'CsomPage.apps.CsompageConfig',
+    'SsomPage.apps.SsompageConfig',
 ]
 
 MIDDLEWARE = [

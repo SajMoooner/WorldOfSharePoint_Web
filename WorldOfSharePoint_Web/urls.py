@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('HomePage.urls')),
     path('CSOM/', include('CsomPage.urls')),
+    path('SSOM/',include('SsomPage.urls'))
 ]
