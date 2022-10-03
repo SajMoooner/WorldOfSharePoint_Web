@@ -26,4 +26,5 @@ urlpatterns = [
     path('admins/',include('AdminPage.urls')),
     path('powerapp/',include('PowerappPage.urls')),
     path('poweraut/', include('PowerautPage.urls')),
+    path('sign/', include('LoginPage.urls')),
 ]

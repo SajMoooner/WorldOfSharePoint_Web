@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'AdminPage.apps.AdminpageConfig',
     'PowerappPage.apps.PowerapppageConfig',
     'PowerautPage.apps.PowerautpageConfig',
+    'LoginPage.apps.LoginpageConfig',
+
 ]
 
 MIDDLEWARE = [
