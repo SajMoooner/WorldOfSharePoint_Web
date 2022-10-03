@@ -22,4 +22,5 @@ urlpatterns = [
     path('csom/', include('CsomPage.urls')),
     path('ssom/',include('SsomPage.urls')),
     path('jsom/',include('JsomPage.urls')),
+    path('spfx/',include('FrameworkPage.urls')),
 ]
