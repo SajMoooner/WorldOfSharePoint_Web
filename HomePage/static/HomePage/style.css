@@ -5,7 +5,7 @@
 
 body {
   margin: 0px;
-  font-family: "Segoe UI Light" , sans-serif;;
+  font-family: "Segoe UI" , sans-serif;;
 }
 
 .nav {
@@ -21,7 +21,7 @@ body {
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 25px;
+  font-size: 15px;
   color: #0078d4;
   padding: 13px 10px 13px 40px;
 }
@@ -33,7 +33,7 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .nav > .nav-links > a {
