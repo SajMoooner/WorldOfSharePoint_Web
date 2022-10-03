@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0px;
+  margin: auto;
   font-family: "Segoe UI" , sans-serif;;
 }
 
@@ -31,9 +31,10 @@ body {
 }
 
 .nav > .nav-links {
-  display: inline;
+  display: block;
   float: right;
   font-size: 15px;
+
 }
 
 .nav > .nav-links > a {
