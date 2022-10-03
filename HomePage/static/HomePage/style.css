@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -95,3 +96,14 @@ body {
     overflow-y: auto;
   }
 }
+.nadpis{
+  color:#0078d4 ;
+  margin: auto;
+  padding: 150px ;
+  text-align: center;
+  font-size: 50px;
+  background-color: #f8f8f8;
+  font-family: "Segoe UI";
+}
+
+
