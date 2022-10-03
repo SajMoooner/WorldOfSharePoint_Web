@@ -117,6 +117,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+#HomePage/static/HomePage/style.css alebo index.js aleb img.jp
 STATIC_URL = 'static/'
 
 # Default primary key field type
