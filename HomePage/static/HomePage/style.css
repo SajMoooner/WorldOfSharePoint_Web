@@ -21,9 +21,9 @@ body {
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 35px;
+  font-size: 25px;
   color: #0078d4;
-  padding: 10px 10px 10px 50px;
+  padding: 13px 10px 13px 40px;
 }
 
 .nav > .nav-btn {
@@ -38,13 +38,13 @@ body {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 40px;
+  padding: 13px 10px 10px 40px;
   text-decoration: none;
   color: #0078d4;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #c8c8c8;
 }
 
 .nav > #nav-check {
@@ -62,7 +62,7 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    padding: 33px;
+    padding: 25px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
@@ -106,7 +106,7 @@ body {
   font-family: "Segoe UI";
 }
 span::before {
-        content: "World";
+        content: "Framework";
         animation: animate infinite 15s;
         padding-left: 10px;
         color: #333333;
@@ -115,7 +115,7 @@ span::before {
     @keyframes animate {
 
         0% {
-            content: "instalation";
+            content: "Power apps";
         }
 
         20% {
