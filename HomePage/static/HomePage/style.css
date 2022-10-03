@@ -105,5 +105,35 @@ body {
   background-color: #f8f8f8;
   font-family: "Segoe UI";
 }
+span::before {
+        content: "World";
+        animation: animate infinite 15s;
+        padding-left: 10px;
+        color: #333333;
+    }
+
+    @keyframes animate {
+
+        0% {
+            content: "instalation";
+        }
+
+        20% {
+            content: "Administration";
+        }
+
+        40%{
+           content: " in C#";
+        }
+
+        60%{
+          content: "in JS";
+        }
+
+
+        80% {
+            content: "in REACT";
+        }
+    }
 
 
