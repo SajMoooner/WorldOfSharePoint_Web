@@ -5,10 +5,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href= {% static 'HomePage/style.css' %} >
+    <link rel="stylesheet" href={% static 'HomePage/style.css' %}>
     <title>HomePage</title>
 </head>
 <body>
-    <h1>Welcome To My HomePage</h1>
+    <nav class="navMenu">
+        <a href="#">Home</a>
+        <a href="#">CSOM</a>
+        <a href="#">SSOM</a>
+        <a href="#">JSOM</a>
+         <a href="#">SPFx</a>
+         <a href="#">Administration</a>
+        <div class="dot"></div>
+    </nav>
 </body>
 </html>
