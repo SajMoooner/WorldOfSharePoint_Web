@@ -25,4 +25,5 @@ urlpatterns = [
     path('spfx/',include('FrameworkPage.urls')),
     path('admins/',include('AdminPage.urls')),
     path('powerapp/',include('PowerappPage.urls')),
+    path('poweraut/', include('PowerautPage.urls')),
 ]
