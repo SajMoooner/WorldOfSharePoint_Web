@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'HomePage.apps.HomepageConfig',
     'CsomPage.apps.CsompageConfig',
     'SsomPage.apps.SsompageConfig',
+    'JsomPage.apps.JsompageConfig',
 ]
 
 MIDDLEWARE = [
