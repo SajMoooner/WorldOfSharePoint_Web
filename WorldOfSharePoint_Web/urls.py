@@ -23,4 +23,6 @@ urlpatterns = [
     path('ssom/',include('SsomPage.urls')),
     path('jsom/',include('JsomPage.urls')),
     path('spfx/',include('FrameworkPage.urls')),
+    path('admins/',include('AdminPage.urls')),
+    path('powerapp/',include('PowerappPage.urls')),
 ]

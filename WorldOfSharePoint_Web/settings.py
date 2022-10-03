@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'SsomPage.apps.SsompageConfig',
     'JsomPage.apps.JsompageConfig',
     'FrameworkPage.apps.FrameworkpageConfig',
+    'AdminPage.apps.AdminpageConfig',
+    'PowerappPage.apps.PowerapppageConfig',
 ]
 
 MIDDLEWARE = [
