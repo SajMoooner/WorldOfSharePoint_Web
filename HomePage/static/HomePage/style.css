@@ -41,6 +41,7 @@ body {
 .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 10px 40px;
+    margin-right: 30px;
     text-decoration: none;
     color: #0078d4;
 }
@@ -118,7 +119,7 @@ body {
 
 span::before {
     content: "Framework";
-    animation: animate infinite 15s;
+    animation: animate infinite 10s;
     padding-left: 10px;
     color: #333333;
 }
@@ -152,7 +153,7 @@ span::before {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 500px);
     grid-column-gap: 20px;
-    grid-row-gap: 10px;
+    grid-row-gap: 40px;
     grid-auto-rows: 240px;
 }
 
@@ -178,12 +179,12 @@ span::before {
     border: 5px solid #eaeaea;
     margin: 0;
     text-align: center;
-    background-color: #d0d0d0;
+    background-color: #a6a6a6;
     border-radius: 30px;
 }
 
 .nadpis2 {
-    color: #0078d4;
+    color: #f4f4f4;
 }
 
 .div3 {
@@ -198,7 +199,7 @@ span::before {
 }
 
 .nadpis3 {
-    color: black;
+    color: #f4f4f4;
 }
 
 .div4 {
@@ -213,7 +214,7 @@ span::before {
 }
 
 .nadpis4 {
-    color: white;
+    color: #f4f4f4;
 }
 
 .div5 {
