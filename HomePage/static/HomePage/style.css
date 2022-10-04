@@ -1,152 +1,209 @@
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: auto;
-  font-family: "Segoe UI" , sans-serif;;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;;
 }
 
 .nav {
-  height: auto;
-  width: 100%;
-  background-color: #f4f4f4;
-  position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #f4f4f4;
+    position: relative;
 }
 
 .nav > .nav-header {
-  display: inline;
+    display: inline;
 }
 
 .nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 15px;
-  color: #0078d4;
-  padding: 13px 10px 13px 40px;
+    display: inline-block;
+    font-size: 15px;
+    color: #0078d4;
+    padding: 13px 10px 13px 40px;
 }
 
 .nav > .nav-btn {
-  display: none;
+    display: none;
 }
 
 .nav > .nav-links {
-  display: block;
-  float: right;
-  font-size: 15px;
+    display: block;
+    float: right;
+    font-size: 15px;
 
 }
 
 .nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 10px 40px;
-  text-decoration: none;
-  color: #0078d4;
+    display: inline-block;
+    padding: 13px 10px 10px 40px;
+    text-decoration: none;
+    color: #0078d4;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: #c8c8c8;
+    background-color: #c8c8c8;
 }
 
 .nav > #nav-check {
-  display: none;
+    display: none;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 25px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #0078d4;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+@media (max-width: 600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+    }
+
+    .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #0078d4;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
 }
-.nadpis{
-  color:#0078d4 ;
-  margin: auto;
-  padding: 100px ;
-  text-align: center;
-  font-size: 1px;
-  background-color: #f8f8f8;
-  font-family: "Segoe UI";
+
+.nadpis {
+    color: #0078d4;
+    margin: auto;
+    padding: 150px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #f8f8f8;
+    font-family: "Segoe UI";
 }
+
 span::before {
-        content: "Framework";
-        animation: animate infinite 15s;
-        padding-left: 10px;
-        color: #333333;
+    content: "Framework";
+    animation: animate infinite 15s;
+    padding-left: 10px;
+    color: #333333;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Power apps";
     }
 
-    @keyframes animate {
-
-        0% {
-            content: "Power apps";
-        }
-
-        20% {
-            content: "Administration";
-        }
-
-        40%{
-           content: " in C#";
-        }
-
-        60%{
-          content: "in JS";
-        }
-
-
-        80% {
-            content: "in REACT";
-        }
+    20% {
+        content: "Administration";
     }
+
+    40% {
+        content: " in C#";
+    }
+
+    60% {
+        content: "in JS";
+    }
+
+
+    80% {
+        content: "in REACT";
+    }
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.div5 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div6 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div7 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div8 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div9 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div10 {
+    grid-area: 3 / 1 / 4 / 5;
+}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
-  div.res {
-    font-size: 10px;
-  }
+    div.res {
+        font-size: 10px;
+    }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
-  div.res {
-    font-size: 1px;
-  }
+    div.res {
+        font-size: 1px;
+    }
 }
