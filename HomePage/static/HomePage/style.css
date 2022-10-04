@@ -119,7 +119,7 @@ body {
 
 span::before {
     content: "Framework";
-    animation: animate infinite 10s;
+    animation: animate infinite 6s;
     padding-left: 10px;
     color: #333333;
 }
@@ -151,7 +151,7 @@ span::before {
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-rows: repeat(3, 300px);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
     grid-auto-rows: 240px;
@@ -281,11 +281,7 @@ span::before {
 
 .div10 {
     grid-area: 3 / 1 / 4 / 5;
-    width: auto;
-    padding: 10px;
-    border: 5px solid transparent;
-    margin: 0;
-    text-align: center;
+    alignment: center;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
