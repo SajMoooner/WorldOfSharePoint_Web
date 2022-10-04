@@ -151,10 +151,10 @@ span::before {
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
-    grid-auto-rows: 240px;
+
 }
 
 .div1 {
@@ -281,7 +281,13 @@ span::before {
 
 .div10 {
     grid-area: 3 / 1 / 4 / 5;
-    alignment: center;
+}
+
+.imgbil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
