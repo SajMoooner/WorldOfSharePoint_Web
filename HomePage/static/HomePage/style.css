@@ -162,78 +162,125 @@ span::before {
     border: 5px solid #0078d4;
     margin: 0;
     text-align: center;
+    background-color: #0078d4;
+    border-radius: 30px;
+}
+
+.nadpis1 {
+    color: #f4f4f4;
 }
 
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #eaeaea;
     margin: 0;
     text-align: center;
+    background-color: #eaeaea;
+    border-radius: 30px;
+}
+
+.nadpis2 {
+    color: #0078d4;
 }
 
 .div3 {
     grid-area: 1 / 3 / 2 / 4;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #ffbe0b;
     margin: 0;
     text-align: center;
+    background-color: #ffbe0b;
+    border-radius: 30px;
+}
+
+.nadpis3 {
+    color: black;
 }
 
 .div4 {
     grid-area: 1 / 4 / 2 / 5;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #00a6a6;
     margin: 0;
     text-align: center;
+    background-color: #00a6a6;
+    border-radius: 30px;
+}
 
+.nadpis4 {
+    color: white;
 }
 
 .div5 {
     grid-area: 2 / 1 / 3 / 2;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #8a4f7d;
     margin: 0;
     text-align: center;
+    background-color: #8a4f7d;
+    border-radius: 30px;
+}
+
+.nadpis5 {
+    color: white;
 }
 
 .div6 {
     grid-area: 2 / 2 / 3 / 3;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #5c573e;
     margin: 0;
     text-align: center;
+    background-color: #5c573e;
+    border-radius: 30px;
+}
+
+.nadpis6 {
+    color: white;
 }
 
 .div7 {
     grid-area: 2 / 3 / 3 / 4;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #568259;
     margin: 0;
     text-align: center;
+    background-color: #568259;
+    border-radius: 30px;
 }
+
+.nadpis7 {
+    color: white;
+}
+
 
 .div8 {
     grid-area: 2 / 4 / 3 / 5;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid #cd8b76;
     margin: 0;
     text-align: center;
+    background-color: #cd8b76;
+    border-radius: 30px;
 }
 
+.nadpis8 {
+    color: white;
+}
 
 .div10 {
     grid-area: 3 / 1 / 4 / 5;
     width: auto;
     padding: 10px;
-    border: 5px solid #0078d4;
+    border: 5px solid transparent;
     margin: 0;
     text-align: center;
 }
