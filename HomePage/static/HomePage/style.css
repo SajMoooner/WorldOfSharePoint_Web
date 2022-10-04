@@ -1,12 +1,15 @@
 
+{% load static %}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: auto;
-    font-family: "Segoe UI", sans-serif;;
+    font-family: "Segoe UI", sans-serif;
     background-color: #eaeaea;
+
 }
 
 .nav {
@@ -150,8 +153,8 @@ span::before {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(3, 500px);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
 
@@ -288,6 +291,7 @@ span::before {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
