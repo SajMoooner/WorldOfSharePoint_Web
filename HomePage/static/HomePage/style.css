@@ -11,7 +11,7 @@ body {
 .nav {
   height: auto;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   position: relative;
 }
 
@@ -100,9 +100,9 @@ body {
 .nadpis{
   color:#0078d4 ;
   margin: auto;
-  padding: 150px ;
+  padding: 100px ;
   text-align: center;
-  font-size: 50px;
+  font-size: 1px;
   background-color: #f8f8f8;
   font-family: "Segoe UI";
 }
