@@ -6,6 +6,7 @@
 body {
     margin: auto;
     font-family: "Segoe UI", sans-serif;;
+    background-color: #eaeaea;
 }
 
 .nav {
@@ -111,7 +112,7 @@ body {
     padding: 150px;
     text-align: center;
     font-size: 50px;
-    background-color: #f8f8f8;
+    background-color: #eaeaea;
     font-family: "Segoe UI";
 }
 
@@ -149,9 +150,9 @@ span::before {
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-rows: repeat(3, 500px);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
     grid-auto-rows: 240px;
 }
 
@@ -160,7 +161,7 @@ span::before {
     width: auto;
     padding: 10px;
     border: 5px solid #0078d4;
-    margin: 0;
+    margin-left: 40px;
     text-align: center;
     background-color: #0078d4;
     border-radius: 30px;
@@ -177,7 +178,7 @@ span::before {
     border: 5px solid #eaeaea;
     margin: 0;
     text-align: center;
-    background-color: #eaeaea;
+    background-color: #d0d0d0;
     border-radius: 30px;
 }
 
@@ -205,10 +206,10 @@ span::before {
     width: auto;
     padding: 10px;
     border: 5px solid #00a6a6;
-    margin: 0;
     text-align: center;
     background-color: #00a6a6;
     border-radius: 30px;
+    margin-right: 40px;
 }
 
 .nadpis4 {
@@ -224,6 +225,7 @@ span::before {
     text-align: center;
     background-color: #8a4f7d;
     border-radius: 30px;
+    margin-left: 40px;
 }
 
 .nadpis5 {
@@ -266,7 +268,7 @@ span::before {
     width: auto;
     padding: 10px;
     border: 5px solid #cd8b76;
-    margin: 0;
+    margin-right: 40px;
     text-align: center;
     background-color: #cd8b76;
     border-radius: 30px;
