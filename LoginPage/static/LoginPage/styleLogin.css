@@ -9,7 +9,6 @@ body {
     margin: auto;
     font-family: "Segoe UI", sans-serif;
     background-color: #eaeaea;
-
 }
 
 .parent {
@@ -27,9 +26,9 @@ body {
 
 .div2 {
     grid-area: 2 / 1 / 3 / 2;
-    background-color: black;
+    margin: auto;
     width: auto;
-    alignment: center;
+    padding: 10px;
 
 }
 
@@ -133,7 +132,7 @@ body {
 
 .wrapper{
   overflow: hidden;
-  max-width: 390px;
+  max-width: 700px;
   background: #fff;
   padding: 30px;
   border-radius: 15px;
