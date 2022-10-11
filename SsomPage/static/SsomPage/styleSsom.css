@@ -8,31 +8,59 @@ body {
     background-color: #eaeaea;
 }
 
-.parent {
+.container {
     display: grid;
-    grid-template-columns: auto 2.5fr;
-    grid-template-rows: 0fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Navigacia Navigacia Navigacia Navigacia"
+    "TextWelcome TextWelcome TextWelcome TextWelcome"
+    "Tlacidlo1 Tlacidlo2 Tlacidlo3 Tlacidlo4"
+    "Tlacidlo5 Tlacidlo6 Tlacidlo7 Tlacidlo8";
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 3;
+.Navigacia {
+    grid-area: Navigacia;
 }
 
-.div2 {
-    grid-area: 2 / 1 / 3 / 2;
-    background-color: #f4f4f4;
-    overflow: auto;
-
+.TextWelcome {
+    grid-area: TextWelcome;
 }
 
-.div3 {
-    grid-area: 2 / 2 / 3 / 3;
-    margin-left: 10%;
-    padding: 10px 16px;
-
+.Tlacidlo1 {
+    grid-area: Tlacidlo1;
 }
+
+.Tlacidlo2 {
+    grid-area: Tlacidlo2;
+}
+
+.Tlacidlo3 {
+    grid-area: Tlacidlo3;
+}
+
+.Tlacidlo4 {
+    grid-area: Tlacidlo4;
+}
+
+.Tlacidlo5 {
+    grid-area: Tlacidlo5;
+}
+
+.Tlacidlo6 {
+    grid-area: Tlacidlo6;
+}
+
+.Tlacidlo7 {
+    grid-area: Tlacidlo7;
+}
+
+.Tlacidlo8 {
+    grid-area: Tlacidlo8;
+}
+
 
 .nav {
     height: auto;
