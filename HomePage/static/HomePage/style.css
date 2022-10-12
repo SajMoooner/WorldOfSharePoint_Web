@@ -297,7 +297,6 @@ body {
 }
 
 
-
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
     div.res {
@@ -322,14 +321,13 @@ body {
     .div1 {
         grid-area: 1 / 1 / 2 / 2;
         width: auto;
-        alignment: center;
 
     }
 
     .div2 {
         grid-area: 2 / 1 / 3 / 2;
-width: auto;
-        alignment: center;
+        width: auto;
+        
     }
 
     .div3 {

@@ -4,7 +4,6 @@ load
 static
 %
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -20,8 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 200px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+
 }
 
 .div1 {
