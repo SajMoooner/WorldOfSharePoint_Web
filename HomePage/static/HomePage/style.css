@@ -163,7 +163,7 @@ body {
 .parent {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
 
