@@ -163,7 +163,7 @@ body {
 .parent {
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 40px;
 
@@ -178,6 +178,7 @@ body {
     text-align: center;
     background-color: #0078d4;
     border-radius: 30px;
+
 }
 
 .nadpis1 {
@@ -295,13 +296,7 @@ body {
     grid-area: 3 / 1 / 4 / 5;
 }
 
-.imgbil {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 
-}
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
@@ -315,122 +310,93 @@ body {
     div.res {
         font-size: 1px;
     }
-}
 
-/* The browser window */
-.container {
-    border: 3px solid #f1f1f1;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-   background-color: white;
-    height: 300px;
-}
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
 
-/* Container for columns and the top "toolbar" */
-.row {
-    padding: 10px;
-    background: #f1f1f1;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        width: auto;
+        alignment: center;
 
-/* Create three unequal columns that floats next to each other */
-.column {
-    float: left;
-}
+    }
 
-.left {
-    width: 15%;
-}
+    .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+width: auto;
+        alignment: center;
+    }
 
-.right {
-    width: 10%;
-}
+    .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 
-.middle {
-    width: 75%;
-}
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+    .div5 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
 
-/* Three dots */
-.dot {
-    margin-top: 4px;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
+    .div6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
 
-/* Style the input field */
-input[type=text] {
-    width: 100%;
-    border-radius: 3px;
-    border: none;
-    background-color: white;
-    margin-top: -8px;
-    height: 25px;
-    color: #666;
-    padding: 5px;
-}
+    .div7 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
 
-/* Three bars (hamburger menu) */
-.bar {
-    width: 17px;
-    height: 3px;
-    background-color: #aaa;
-    margin: 3px 0;
-    display: block;
-}
+    .div8 {
+        grid-area: 8 / 1 / 9 / 2;
+    }
 
-/* Page content */
-.content {
-    padding: 10px;
 
 }
 
-.tlacidlo1{
+
+.tlacidlo1 {
     padding: 32px 16px;
     margin-top: 10px;
     border-radius: 8px;
     width: 80%;
 
 }
+
 .tlacidlo1 {
 
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    touch-action: manipulation;
 }
 
 .tlacidlo1:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-  transition-duration: .1s;
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
 }
 
+
 @media (min-width: 768px) {
-  .tlacidlo1 {
-    padding: 0 2.6rem;
-  }
+    .tlacidlo1 {
+        padding: 0 2.6rem;
+    }
 }
 

@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -49,365 +49,35 @@
     <div class="div1">
         <h2 class="nadpis1">Server Side Object Model</h2>
 
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
-
         <button class="tlacidlo1">Learn</button>
     </div>
     <div class="div2">
         <h2 class="nadpis2">Client Side Object Model</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div3">
         <h2 class="nadpis3">JavaScript Object Model</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div4">
         <h2 class="nadpis4">SharePoint Framework</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div5">
         <h2 class="nadpis5">Power apps</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div6">
         <h2 class="nadpis6">Power automation</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div7">
         <h2 class="nadpis7">SharePoint Administration</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div8">
         <h2 class="nadpis8">Bill memes</h2>
-        <div class="container">
-            <div class="row">
-                <div class="column left">
-                    <span class="dot" style="background:#ED594A;"></span>
-                    <span class="dot" style="background:#FDD800;"></span>
-                    <span class="dot" style="background:#5AC05A;"></span>
-                </div>
-                <div class="column middle">
-                    <input type="text" value="www.server side programing.com">
-                </div>
-                <div class="column right">
-                    <div style="float:right">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="content">
-
-                <p style="color: blue">using (ClientContext clientContext = new ClientContext("http://MyServer/sites/MySiteCollection"))
-                    {<br></p>
-                    <p style="color:darkgreen;>
-                    List targetList = clientContext.Web.Lists.GetByTitle("");
-                        <br>
-                    CamlQuery oQuery = CamlQuery.CreateAllItemsQuery();
-                        <br>
-
-                    </p>
-                     <p style="color: purple">
-                    ListItemCollection oCollection = targetList.GetItems(oQuery);
-                    clientContext.Load(oCollection);
-                    clientContext.ExecuteQuery();
-
-                    foreach (ListItem oItem in oCollection)
-                    {
-                    Console.WriteLine(oItem["Title"].ToString());
-                    }
-                    }</p>
-            </div>
-        </div>
     </div>
     <div class="div10">
 
