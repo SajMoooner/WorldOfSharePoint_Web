@@ -4,9 +4,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      {% load static %}
+    <link rel="stylesheet" href={% static 'AdminPage/styleAdmin.css' %}>
     <title>Administrácia</title>
 </head>
 <body>
-    <p>Administrácia page</p>
+     <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                World Of SharePoint
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="http://127.0.0.1:8000/" target="_blank">Home Page</a>
+            <a href="http://127.0.0.1:8000/powerapp/" target="_blank">Power apps</a>
+            <a href="http://127.0.0.1:8000/poweraut/" target="_blank">Power automation</a>
+            <a href="http://127.0.0.1:8000/ssom/" target="_blank">ServeSide programming</a>
+            <a href="http://127.0.0.1:8000/csom/" target="_blank">ClientSide programming</a>
+            <a href="http://127.0.0.1:8000/jsom/" target="_blank">JavaScript programming</a>
+            <a href="http://127.0.0.1:8000/spfx/" target="_blank">SharePoint Framework</a>
+            <a href="http://127.0.0.1:8000/admins/" target="_blank">Administracia SharePoint</a>
+            <a href="http://127.0.0.1:8000/sign/" target="_blank">Login</a>
+        </div>
+    </div>
 </body>
 </html>
