@@ -23,4 +23,5 @@ urlpatterns = [
     path('ssom/',include('SsomPage.urls')),
     path('jsom/',include('JsomPage.urls')),
     path('sign/', include('LoginPage.urls')),
+    path('uprav/', include('upravPage.urls')),
 ]

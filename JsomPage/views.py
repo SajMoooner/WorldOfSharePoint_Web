@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import  PridajClanok
+from .forms import  PridajClanok, UpravClanok
 import psycopg2
 
 # connect to the database
@@ -9,6 +9,7 @@ cur = conn.cursor()
 def JsomPage(request):
     if request.method == 'POST':
         form = PridajClanok(request.POST)
+
         if form.is_valid():
             data = form.cleaned_data
             print(data)
@@ -34,5 +35,6 @@ def JsomPage(request):
                 return redirect('http://127.0.0.1:8000')
     else:
         form = PridajClanok()
+
     return render(request, 'JsomPage/jsom.html', {'form': form})
 

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href={% static 'JsomPage/styleJsom.css' %}>
-    <script type="text/javascript" src="{% static 'JsomPage/scriptJson.js' %}"></script>
+    <link rel="stylesheet" href={% static 'upravPage/uprav.css' %}>
+    <script type="text/javascript" src="{% static 'upravPage/upravScript.js.js' %}"></script>
     <title>Home page</title>
 </head>
 <body>
@@ -34,28 +34,22 @@
     </div>
     <div class="sidebar">
         <a class="active" href="#home">Čo je SharePoint</a>
-        <a href="http://127.0.0.1:8000/jsom/">Vytvor článok</a>
+        <a href="http://127.0.0.1:8000/jsom">Vytvor článok</a>
         <a href="http://127.0.0.1:8000/uprav/">Uprav článok</a>
         <a href="#JSOM">Vymaž článok</a>
-
       </div>
 
       <div class="content">
-        <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">Pridaj článok</h2>
 
+
+           <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">Uprav článok</h2>
            <form method="post">
-             {% csrf_token %}
-              {{ form }}
-               <input type="submit" value="Pridaj">
+                {% csrf_token %}
+               {{ form }}
+               <input type="submit" value="Uprav">
          </form>
 
 
-          <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">Vymaž článok</h2>
-           <form>
-              <label for="fname">Názov článku</label>
-              <input style="margin-bottom: 30px; " type="text" id="fname" name="fname">
-                <input type="submit" value="Vymaž">
-         </form>
 
 
 
