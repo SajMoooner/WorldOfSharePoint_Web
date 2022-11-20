@@ -5,11 +5,9 @@
   font-family: sans-serif;
   letter-spacing: 1px;
   font-weight: 300;
-
 }
 body{
   overflow-x: hidden;
-    height: auto;
 }
 nav{
   height: 3rem;
@@ -234,7 +232,6 @@ div.content {
     float: none;
   }
 }
-
 .responsive {
   width: 100%;
   max-width: 400px;
