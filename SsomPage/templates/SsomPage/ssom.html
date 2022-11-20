@@ -34,14 +34,9 @@
     </div>
     <div class="sidebar">
         <a class="active" href="#home">Home</a>
-        <a href="#Csome">Autentifikácia</a>
-        <a href="#SSom">Použitie</a>
-        <a href="#SSom">Vytvor list</a>
-        <a href="#JSOM">Vytvor item</a>
-        <a href="#JSOM">Vytvor folder</a>
-        <a href="#JSOM">Vrat itemy</a>
-        <a href="#JSOM">Updatni item</a>
-        <a href="#JSOM">Vymaž item</a>
+            {% for item in results %}
+             <a href="#Csome">{{ item.nazovclanku}}</a>
+         {% endfor %}
       </div>
 
       <div class="content">
@@ -49,9 +44,7 @@
          {% for item in results %}
             <h1 style="color: black; margin-bottom: 20px">{{ item.nazovclanku}}</h1>
            <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
-
         {% endfor %}
-
       </div>
 </body>
 </html>

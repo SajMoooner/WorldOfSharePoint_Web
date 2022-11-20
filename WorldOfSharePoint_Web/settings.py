@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'JsomPage.apps.JsompageConfig',
     'LoginPage.apps.LoginpageConfig',
     'upravPage.apps.UpravpageConfig',
+    'vymazPage.apps.VymazpageConfig',
 ]
 
 MIDDLEWARE = [

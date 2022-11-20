@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href={% static 'CsomPage/styleCsom.css' %}>
-    <script type="text/javascript" src="{% static 'CsomPage/script.js' %}"></script>
+    <link rel="stylesheet" href={% static 'vymazPage/styleVymaz.css' %}>
+    <script type="text/javascript" src="{% static 'vymazPage/vymazScript.js' %}"></script>
     <title>Home page</title>
 </head>
 <body>
@@ -20,9 +20,9 @@
         <ul  style="background-color: black;" class="nav-links">
             <li><a style="color: white;" href="http://127.0.0.1:8000">Home</a></li>
             <li><a style="color: white;" href="http://127.0.0.1:8000/csom/">CSOM</a></li>
-            <li><a style="color: white;" href="http://127.0.0.1:8000/ssom/">SSOM</a></li>
+            <li><a style="color: white;" href="http://127.0.0.1:8000/ssom">SSOM</a></li>
             <li><button style="color: white;" class="login-button" onclick="location.href='http://127.0.0.1:8000/sign/'">Login</button></li>
-              <li><button class="join-button" onclick="location.href='http://127.0.0.1:8000/jsom/'" >ADMIN</button></li>
+            <li><button class="join-button" onclick="location.href='http://127.0.0.1:8000/jsom/'" >ADMIN</button></li>
         </ul>
     </nav>
 
@@ -33,19 +33,23 @@
 
     </div>
     <div class="sidebar">
-        <a class="active" href="#home">Home</a>
-           {% for item in results %}
-             <a href="#Csome">{{ item.nazovclanku}} </a>
-           {% endfor %}
+        <a class="active" href="#home">Čo je SharePoint</a>
+          <a href="http://127.0.0.1:8000/jsom/">Vytvor článok</a>
+        <a href="http://127.0.0.1:8000/uprav/">Uprav článok</a>
+        <a href="http://127.0.0.1:8000/vymaz/">Vymaž článok</a>
+
       </div>
 
       <div class="content">
-        <h2 style="color: black; margin-top: 80px;">CSOM</h2>
-           {% for item in results %}
-            <h1 style="color: black; margin-bottom: 20px">{{ item.nazovclanku}}</h1>
-           <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
 
-        {% endfor %}
+
+          <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">Vymaž článok</h2>
+           <form method="post">
+            {% csrf_token %}
+               {{ form.as_p }}
+                <input type="submit" value="Vymaž">
+           </form>
+
 
 
       </div>
