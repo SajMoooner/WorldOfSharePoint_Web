@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href={% static 'HomePage/style.css' %}>
-    <script type="text/javascript" src="{% static 'HomePage/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'HomePage/scriptHome.js' %}"></script>
     <title>Home page</title>
 </head>
 <body>
@@ -43,10 +43,17 @@
       </div>
 
       <div class="content">
-        <h2 style="color: black; margin-top: 80px;">HOME</h2>
-        <p style="color: black;">We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-        <h3 style="color: black;" >Resize the browser window to see the effect.</h3>
+        <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">HOME</h2>
+        <!--Show data passsed to template -->
+        <h1 style="color: black; margin-bottom: 30px"></h1>
+          <p style="color: black;"></p>
 
+         <!-- Loop though list -->
+        {% for item in results %}
+            <h1 style="color: black; margin-bottom: 20px">{{ item.nazovclanku}}</h1>
+           <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
+
+        {% endfor %}
 
       </div>
 </body>

@@ -42,13 +42,9 @@
 
       <div class="content">
         <h2 style="color: black; margin-top: 80px; margin-bottom: 30px">Pridaj článok</h2>
-           <form>
-              <label for="fname">Názov článku</label>
-              <input style="margin-bottom: 30px; " type="text" id="fname" name="fname">
-              <label for="lname">Článok</label>
-              <input style="margin-bottom: 30px; height: 150px" type="text" id="lname" name="lname">
-               <label for="fname">Obrázok</label>
-              <input style="margin-bottom: 30px; " type="text" id="fname" name="fname">
+           <form method="post">
+             {% csrf_token %}
+              {{ form }}
                <input type="submit" value="Pridaj">
          </form>
 
