@@ -46,8 +46,11 @@
 
       <div class="content">
         <h2 style="color: black; margin-top: 80px;">CSOM</h2>
-        <p style="color: black;">We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-        <h3 style="color: black;" >Resize the browser window to see the effect.</h3>
+           {% for item in results %}
+            <h1 style="color: black; margin-bottom: 20px">{{ item.nazovclanku}}</h1>
+           <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
+
+        {% endfor %}
 
 
       </div>

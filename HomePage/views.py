@@ -1,10 +1,6 @@
 import columns as columns
 from django.shortcuts import render
 import psycopg2
-import sys
-import os
-import time
-import datetime
 
 # connect to the database
 conn = psycopg2.connect("dbname='worldofsharepointdb' user='postgres' host='localhost' password='simonkoo'")
