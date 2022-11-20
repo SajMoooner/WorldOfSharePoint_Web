@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import  PridajClanok, UpravClanok
+from .forms import  PridajClanok
 import psycopg2
 
 # connect to the database

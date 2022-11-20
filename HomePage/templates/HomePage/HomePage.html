@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href={% static 'HomePage/style.css' %}>
-    <script type="text/javascript" src="{% static 'HomePage/scriptHome.js' %}"></script>
+    <link type="text/javascript" href="{% static 'HomePage/scriptHome.js' %}">
     <title>Home page</title>
 </head>
 <body>
@@ -50,8 +50,9 @@
          <!-- Loop though list -->
         {% for item in results %}
             <h1 style="color: black; margin-bottom: 20px">{{ item.nazovclanku}}</h1>
-           <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
+            <p style="color: black;margin-bottom: 20px"> {{ item.clanok }}</p>
 
+            <!--<img src="{{ item.obrazok }}" class="responsive">-->
         {% endfor %}
 
       </div>
