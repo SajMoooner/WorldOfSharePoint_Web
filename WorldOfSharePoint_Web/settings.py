@@ -41,10 +41,6 @@ INSTALLED_APPS = [
     'CsomPage.apps.CsompageConfig',
     'SsomPage.apps.SsompageConfig',
     'JsomPage.apps.JsompageConfig',
-    'FrameworkPage.apps.FrameworkpageConfig',
-    'AdminPage.apps.AdminpageConfig',
-    'PowerappPage.apps.PowerapppageConfig',
-    'PowerautPage.apps.PowerautpageConfig',
     'LoginPage.apps.LoginpageConfig',
 ]
 

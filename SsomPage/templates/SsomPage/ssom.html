@@ -2,104 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href={% static 'SsomPage/styleSsom.css' %}>
     <script type="text/javascript" src="{% static 'SsomPage/ssomJs.js' %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>Server Side programming</title>
+    <title>Home page</title>
 </head>
 <body>
-<div class="parent">
-    <div class="div1">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-                <div class="nav-title">
-                    World Of SharePoint
-                </div>
-            </div>
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
+    <nav>
 
-            <div class="nav-links">
-                <a href="http://127.0.0.1:8000/" target="_blank">Home Page</a>
-                <a href="http://127.0.0.1:8000/powerapp/" target="_blank">Power apps</a>
-                <a href="http://127.0.0.1:8000/poweraut/" target="_blank">Power automation</a>
-                <a href="http://127.0.0.1:8000/ssom/" target="_blank">ServeSide programming</a>
-                <a href="http://127.0.0.1:8000/csom/" target="_blank">ClientSide programming</a>
-                <a href="http://127.0.0.1:8000/jsom/" target="_blank">JavaScript programming</a>
-                <a href="http://127.0.0.1:8000/spfx/" target="_blank">SharePoint Framework</a>
-                <a href="http://127.0.0.1:8000/admins/" target="_blank">Administracia SharePoint</a>
-                <a href="http://127.0.0.1:8000/sign/" target="_blank">Login</a>
-            </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-    </div>
-    <div class="div2">
-        <ul>
-            <li><a class="active" href="#home">Before we start</a></li>
-            <li><a href="#news">Create site</a></li>
-            <li><a href="#showForm" id="test">Create item</a></li>
-            <li><a href="#about">Create list</a></li>
-            <li><a href="#about">Create library</a></li>
-            <li><a href="#about">Create folder</a></li>
-            <li><a href="#about">Read item</a></li>
-            <li><a href="#about">Read libray item</a></li>
-            <li><a href="#about">Update item</a></li>
-            <li><a href="#about">Delete item</a></li>
+        <ul  style="background-color: black;" class="nav-links">
+            <li><a style="color: white;" href="http://127.0.0.1:8000">Home</a></li>
+            <li><a style="color: white;" href="http://127.0.0.1:8000/csom/">CSOM</a></li>
+            <li><a style="color: white;" href="http://127.0.0.1:8000/ssom/">SSOM</a></li>
+            <li><button style="color: white;" class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">ADMIN</button></li>
         </ul>
-    </div>
-    <div class="div3">
-        <h2>Step 0 : Have a SharePoint on Premise</h2>
-        <p>Its necesary to have a testing sharepoint site where you can try your code.</p>
+    </nav>
 
-        <h2>Step 1 : Get coffe </h2>
-        <p>Realy Developing SharePoint Solution is not fun. Some developer will rather shot yourself in foot then
-            developing in sharepoint.
-            Its not easy , but if you have willing to learn, then you are unstoptable</p>
-
-        <h2>Step 2 : Download visual studio </h2>
-        <p>If you are using mac/windows/linux it deosnt matter you can download comnity version of visual studio for
-            every operating system</p>
-        <img src="{% static 'SsomPage/visualStudioInstaller.png' %}">
-
-        <h2>Step 3 : Install c# development and office 356 package</h2>
-        <p>This packages are necesary to create SharePoint solution</p>
-        <img class="img" src="{% static 'SsomPage/cs.png' %}">
-        <img class="img" src="{% static 'SsomPage/office.png' %}">
-
-        <h2>Step 4 : Create SharePoint Project</h2>
-        <p>Its necesary to realise that we are giong to try ale of the code examples in manual mode. We run code in
-            console application.</p>
-        <h3>Create new project</h3>
-        <p>We will be creating new project like this every time </p>
-        <img class="img1" src="{% static 'SsomPage/project.png' %}">
-        <h3>Choose you project type : Console Application</h3>
-        <p>We are not using SharePoint template cause we are not installlin wsp solutions</p>
-        <img class="img1" src="{% static 'SsomPage/consoleapp.png' %}">
-
-        <h3>Choose you project name </h3>
-        <p>In project nema ve can use differetn paradigmas like HelloWorld or Hello_World </p>
-        <img class="img1" src="{% static 'SsomPage/projectName.png' %}">
-
-        <h3>Choose you project .NET framework </h3>
-        <p>In project nema ve can use differetn paradigmas like HelloWorld or Hello_World </p>
-        <img class="img1" src="{% static 'SsomPage/dotnet.png' %}">
-
-        <h3>Comple project </h3>
-
-        <img class="img1" src="{% static 'SsomPage/compile.png' %}">
-
-        <h2>Good job the easiest part is done! Lets code sharepoint</h2>
-        <img class="img1" src="{% static 'HomePage/gates.png' %}">
+    <div class="sidebar">
+        <a href="#SSOM">CSOM</a>
+        <a href="#JSOM">SSOM</a>
+        <a href="#CSOM">HOME 3</a>
 
     </div>
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#Csome">HOME</a>
+        <a href="#SSom">SSOM</a>
+        <a href="#JSOM">JSOM</a>
+        <a href="#JSOM">CSOM</a>
+        <a href="#JSOM">LOGIN</a>
+        <a href="#JSOM">REGISTER</a>
+      </div>
 
-</div>
-</div>
+      <div class="content">
+        <h2 style="color: black; margin-top: 80px;">SSOM</h2>
+        <p style="color: black;">We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+        <h3 style="color: black;" >Resize the browser window to see the effect.</h3>
+
+
+      </div>
 </body>
 </html>
