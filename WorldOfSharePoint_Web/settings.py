@@ -121,6 +121,7 @@ USE_TZ = True
 #HomePage/static/HomePage/style.css alebo index.js aleb img.jp
 STATIC_URL = 'static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

@@ -1,11 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Home Page</h1>
 
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Microsoft SharePoint moduly</title>
+    {% load static %}
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="{% static 'homePage/style.css' %}" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img style="height: auto;" src="images/logo-ac-autocont-g.png" alt="alternative"></a>  -->
+
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Domov <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Katalog modulov</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">Vytvorenie intranetu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm" href="log-in.html">LOG OUT</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h1>Moduly pre SharePoint</h1>
+                            <p class="p-large">Pridajte do Vášho SharePointu moduly ktoré zvýšia efektivitu práce a zlepšia komunikáciu vo Vašej organizácií.</p>
+
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="{% static 'homePage/header-software-app.png' %}" alt="alternative">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#0078d4;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
+    <!-- end of header -->
+
+    <!-- Description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">Prečo potrebujem moduly</div>
+                    <h2 class="h2-heading">Moduly ktoré sa jednoducho pridajú do Vášho SharePointu</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{% static 'homePage/description-1.png'%}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Zvýšenie efektivity</h4>
+                            <p>Niektoré podnikové procesy sú veľmi zdĺhave a vyžadujú organizáciu ktorú vykonáva človek.Preto sú vytvorené moduly ktoré tento proces automatizujú.Príklad takéhoto procesu je schvaľovanie faktúr.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{% static 'homePage/description-2.png' %}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Zvýšenie produktivity</h4>
+                            <p>Vytvoria prehľad o fungovaní firmy. Príklad takéhoto procesu je odoslaná pošta.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="{% static 'homePage/description-3.png' %}" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Zlepšienie prehľadu</h4>
+                            <p>Defaultné SharePoint formuláre vedia byť niekedy náročne pre používateľa.Preto je lepšie vytvoriť na mieru formuláre ktoré budú slúžiť pre zjednodušenie procesov.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">Moduly</div>
+                    <h2 class="h2-heading">Katalóg modulov</h2>
+                    <p class="p-heading">Moduly su rozdelené do troch kategorií. Kategoria efektivity sa venuje schvaľovacím procesom v podniku. Kategória produktivita sa venuje vizaulizácií a automatizácií zavedených procesov. Posledná kategoria sa venuje úpravev SharePoint formulárov a listov.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Tabs Links -->
+                    <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Moduly pre schvaľovanie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Moduly pre vizualizáciu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-chart-bar"></i>Moduly prehľadu</a>
+                        </li>
+                    </ul>
+                    <!-- end of tabs links -->
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="argoTabsContent">
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="{% static 'homePage/features-1.png' %}" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Schvaľovacie procesy </h3>
+                                        <p>Tieto moduly sú určené na vytvorenie nových schvaľovacích procesov. Pekným príkladom je schvaľovanie faktúr. V tomto precese prebieha schvalenie faktúry medzi rôznimi oddeleniamu a na konci to schváli šéf, a detailne si pozrei tento proces. Podobných schvaľovacích procesov nielen pre faktúry je v podniku mnoho.</p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Prehľad schvalovacích modulov </div>
+                                            </li>
+
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Vytvorenie nového schvaľovacieho modulu ak ste si nenašli modul ktorý Vám vyhovuje </div>
+                                            </li>
+                                        </ul>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Ukáž všetky moduly pre schvaľovanie</a>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="{% static 'homePage/features-2.png' %}" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Vizualizácia procesov a dát</h3>
+                                        <p>Tieto moduli sú určené na vizualizáciu schvaľovacích procesov a dát ktoré sú uložené v SharePointe. Máme proces schvaľovania dovoleniek ktorý je v module efktivity. Avšak náš šéf potrebuje mesačný výkaz od každého zamestnanca koľko si tento mesaic zobral dovoleniek.  Takýchto výkazov a reportov je v podniku mnoho. Tak nech ich za nás vytvára počítač.</p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Prehľad modulov dostupných vizualizácií v podobe reportov</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Prehľad modulov dynamických vyzualizácií podľa vstupu od užívateľa</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Vytvorenie nového vyzualizačného moudly na mieru</div>
+                                            </li>
+                                        </ul>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">Ukáž všetky moduly pre vizualizáciu dát</a>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="image-container">
+                                        <img class="img-fluid" src="{% static 'homePage/features-3.png' %}" alt="alternative">
+                                    </div> <!-- end of image-container -->
+                                </div> <!-- end of col -->
+                                <div class="col-lg-6">
+                                    <div class="text-container">
+                                        <h3>Úprava formulárov,listov a knižníc</h3>
+                                        <p>Tieto moduly su určené na vytvorenie a úpravu defaultných SharePoint formulárov,zoznamov a listov. Potrebujem vložiť údaje o faktúre do SharePoint listu avšak defaultny formulár je veľmi komplikovaný a neponúka validáciu vložených údajov. Preto je vytvorený modul ktorý ponúka formulár na vloženie faktúry. </p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Prehľad modulov formulárov</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Prehľad modulov na úpravu listu a knižníc</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="fas fa-square"></i>
+                                                <div class="media-body">Vytvorenie nového modulu na úpravu listu,knižnice a vytvorenie formulára</div>
+                                            </li>
+                                        </ul>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">Ukáž všetky moduly pre lepší prehľad </a>
+                                    </div> <!-- end of text-container -->
+                                </div> <!-- end of col -->
+                            </div> <!-- end of row -->
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                    </div> <!-- end of tab content -->
+                    <!-- end of tabs content -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+
+
+    <!-- Details -->
+    <div id="details" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Nemáte ešte SharePoint ? Žiaden problém s vytvorením a administráciou Vám vieme pomôcť</h2>
+                        <p>Ako vybrať ten správny SharePoint? Ako spustiť inštaláciu ? Ako spravovať a pridávať konta ? Na všetky tieto otázky a mnoho dalších narazíte pri vytvaraní vlastného ShaPoint intranetu. Sme tu pre Vás aby sme Vám na tieto otázky odpovedali a poradili Vám ako čo najjednoduchšie vytvoriť a spravovať SharePoint.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Vytvorenie SharePoint intranetu</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Administrácia a správa SharePointu</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Konzultácie k SharePointu</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg page-scroll" href="">Bližšie informácie</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'homePage/details.png' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details -->
+
+
+
+   <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#0078d4;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+    <div id="kontakt" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>Kto sme</h4>
+                        <p class="p-small">Sme malá firma ktorá sa zameriava na vytvorenie intranetu na platforme SharePoint.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Kontakt</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Bratislavska 29, Žilina </div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:contact@tivo.com">Simon.Ochotnicky@autocont.sk <br> + 421 944 445 567</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="{% static 'homePage/script.js' %}"></script> <!-- Custom scripts -->
 </body>
 </html>
+
+<style>
+
+</style>
