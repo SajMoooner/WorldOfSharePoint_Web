@@ -37,13 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'HomePage.apps.HomepageConfig',
-    'CsomPage.apps.CsompageConfig',
-    'SsomPage.apps.SsompageConfig',
-    'JsomPage.apps.JsompageConfig',
-    'LoginPage.apps.LoginpageConfig',
-    'upravPage.apps.UpravpageConfig',
-    'vymazPage.apps.VymazpageConfig',
 ]
 
 MIDDLEWARE = [
