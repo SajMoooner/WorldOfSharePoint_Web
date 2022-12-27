@@ -8,6 +8,11 @@ from .import models
 
 # Create your views here.
 def loginPage(request):
+
+    # logout user if he is already logged in
+    if request.user.is_authenticated:
+        logout(request)
+    
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
