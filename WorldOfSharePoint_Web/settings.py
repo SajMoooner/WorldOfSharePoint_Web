@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'vytvorspPage.apps.VytvorsppageConfig',
+    'prehladPage.apps.PrehladpageConfig',
+    'vizualizaciaPage.apps.VizualizaciapageConfig',
+    'schvalovaniePage.apps.SchvalovaniepageConfig',
     'homePage.apps.HomepageConfig',
     'loginPage.apps.LoginPageConfig',
     'django.contrib.admin',

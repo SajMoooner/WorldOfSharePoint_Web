@@ -21,4 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('loginPage.urls')),
     path('homePage/', include('homePage.urls')),
+    path('schvalovanieModules/', include('schvalovaniePage.urls')),
+    path('vizualizaciaModules/', include('vizualizaciaPage.urls')),
+    path('prehladModules/', include('prehladPage.urls')),
+    path('vytvorIntranet/', include('vytvorspPage.urls')),
 ]
